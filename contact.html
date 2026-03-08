@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Contact</title>
+  <link rel="stylesheet" href="assets/css/styles.css">
+</head>
+<body class="contact-page">
+  <header>
+  <nav>
+      <a href="home.html">Home</a> |
+      <a href="about.html">About</a> |
+      <a href="projects.html">Projects</a> |
+      <a href="Skills.html">Skills</a> |
+      <a href="contact.html">Contact</a> |
+      <a href="location.html">Location</a> |
+    </ul>
+  </nav>
+  </header>
+
+  <main>
+  <section class="contact-section">
+    <h1>Contact Me</h1>
+    <p>If you have any questions or suggestions, feel free to reach out using the form below.</p>
+    <form class="contact-form" method="post" action="#">
+      <fieldset>
+        <legend>Contact Form</legend>
+
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" placeholder="Your Name" required>
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" placeholder="Your Email" required>
+
+        <label for="phone">Phone:</label>
+        <input type="tel" id="phone" name="phone" pattern="[0-9]{10}" placeholder="Your Phone" required>
+
+        <label for="password">Password:</label>
+        <input type="password" id="password" name="password" placeholder="Your Password" required>
+
+        <label for="age">Age:</label>
+        <input type="number" id="age" name="age" min="18" max="99" placeholder="Your Age">
+
+        <label for="date">Date:</label>
+        <input type="date" id="date" name="date">
+
+        <label for="color">Favorite Color:</label>
+        <input type="color" id="color" name="color">
+
+        <label for="file">Upload File:</label>
+        <input type="file" id="file" name="file">
+
+        <fieldset>
+          <legend>Gender:</legend>
+          <input type="radio" id="male" name="gender" value="male">
+          <label for="male">Male</label>
+          <input type="radio" id="female" name="gender" value="female">
+          <label for="female">Female</label>
+        </fieldset>
+
+        <fieldset>
+          <legend>Interests:</legend>
+          <input type="checkbox" id="coding" name="interest" value="coding">
+          <label for="coding">Coding</label>
+          <input type="checkbox" id="music" name="interest" value="music">
+          <label for="music">Music</label>
+        </fieldset>
+
+        <label for="country">Country:</label>
+        <select id="country" name="country">
+          <optgroup label="Asia">
+            <option>Vietnam</option>
+            <option>Japan</option>
+          </optgroup>
+          <optgroup label="Europe">
+            <option>France</option>
+            <option>Germany</option>
+          </optgroup>
+        </select>
+
+        <label for="message">Message:</label>
+        <textarea id="message" name="message" placeholder="Write your message here..."></textarea>
+
+        <label for="suggestions">Suggestions:</label>
+        <input list="topics" id="suggestions" name="suggestions" placeholder="Choose a topic">
+        <datalist id="topics">
+          <option value="Web Development">
+          <option value="AI">
+          <option value="Design">
+        </datalist>
+
+        <input type="hidden" name="hiddenField" value="secret">
+
+        <input type="submit" value="Send">
+        <input type="reset" value="Reset">
+      </fieldset>
+    </form>
+  </section>
+</main>
+
+
+  
+</body>
+</html>
